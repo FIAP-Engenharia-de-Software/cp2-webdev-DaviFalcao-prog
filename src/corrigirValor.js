@@ -6,6 +6,13 @@
 
 function corrigirValor(valor) {
   // TODO: implementar função
+  let num = parseFloat(valor)
+  if(isNaN(num)){
+    return "Valor inválido"
+  }
+  else{
+    return num
+  }
 }
 
 //NÃO REMOVA O CÓDIGO ABAIXO

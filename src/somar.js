@@ -4,7 +4,22 @@
 // A função abaixo tenta somar dois números, mas está sem nenhuma validação. Encontre e corrija os problemas para que a função funcione corretamente. Considere que o **parâmetro b pode ser opcional** e que, se não for fornecido, **deve ser considerado como 0**. Além disso, **a função não deve retornar valores de tipos inesperados (como NaN ou undefined)**, e deve tratar casos em que os **parâmetros não são números**, retornando a mensagem "Parâmetro inválido".
 
 function somar(a, b) {
-  let resultado = a + b;
+  let num1 = parseFloat(a);
+  let num2 = parseFloat(b)
+  if(isNaN(a)){
+    return "Parâmetro inválido"
+  }
+  else if(isNaN(b)){
+    return "Parâmetro inválido"
+  }
+  let resultado = num1 + num2;
+
+  if (num2 == null || num2 == undefined){
+    return resultado = num1
+  }
+  else if (num1 == null || num1 == undefined){
+    return resultado = num2
+  }
   return resultado;
 }
 

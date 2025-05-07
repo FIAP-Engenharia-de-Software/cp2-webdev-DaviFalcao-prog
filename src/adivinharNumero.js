@@ -9,7 +9,15 @@
 
 function adivinharNumero(max, palpite) {
   // TODO: implementar função
+  numero = Math.random() * max
+  if(numero === palpite){
+    return "Acertou!"
+  }
+  else{
+    return "Errou! Tente novamente!"
+  }
 }
+adivinharNumero()
 
 
 // NÃO REMOVA O CÓDIGO ABAIXO
